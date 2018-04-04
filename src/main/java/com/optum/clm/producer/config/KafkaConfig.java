@@ -18,7 +18,7 @@ public class KafkaConfig {
 	@Bean
 	public ProducerFactory<String, String> producerFactory() {
 		Map<String, Object> configs = ImmutableMap.of(
-				ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9091",
+				ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092",
 				ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class,
 				ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 

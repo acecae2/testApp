@@ -1,15 +1,15 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/Test
-    username: postgres
-    password: user 
-   
-    driver-class-name: org.postgresql.Driver
-      
-  jpa:
-    properties:
-      hibernate:
-        temp:
-          use_jdbc_metadata_defaults: false
-          
-  database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://127.0.0.1:5432/Test
+#    username: postgres
+#    password: user
+#
+#    driver-class-name: org.postgresql.Driver
+#
+#  jpa:
+#    properties:
+#      hibernate:
+#        temp:
+#          use_jdbc_metadata_defaults: false
+#
+#  database-platform: org.hibernate.dialect.PostgreSQL9Dialect

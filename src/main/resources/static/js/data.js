@@ -72,9 +72,7 @@ function loadName(){
 
 function createTable(data){
     var empDetails = data;
-    empDetails.onclick(function (){
 
-    })
     console.log(empDetails[2].length);
     //console.log(empDetails[3].firstname);
     var myTableDiv = document.getElementById("tableDiv");
@@ -89,22 +87,20 @@ function createTable(data){
     var td = document.createElement('TD');
 
     for(var i = 0; i < empDetails.length; i++){
-        var btn = document.createElement("BUTTON");
-        btn.onclick(function(){
-
-
-
-        });
+        // var btn = document.createElement("BUTTON");
+        // btn.onclick(function(){
+        //
+        //
+        //
+        // });
 
         var tr = document.createElement('TR');
         var td = document.createElement('TD');
         var td2 = document.createElement('TD');
-        var td3 = document.createElement('TD');
         td.appendChild(document.createTextNode(empDetails[i].firstname));
         td2.appendChild(document.createTextNode(empDetails[i].lastname));
-        td3.appendChild(document.createTextNode(empDetails[i].lastname));
         tr.appendChild(td);
-        tr.appendChild(td3);
+        tr.appendChild(td2);
 
         tableBody.appendChild(tr);
     }

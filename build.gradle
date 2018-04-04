@@ -15,6 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+
 apply from: 'gradle/ide.gradle'
 
 group = 'com.optum.clm.producer'
@@ -28,7 +29,6 @@ repositories {
 dependencies {
 	compile(
 		'org.springframework.boot:spring-boot-starter-actuator',
-		'org.springframework.boot:spring-boot-starter-data-jpa',
 		'org.springframework.boot:spring-boot-starter-logging',
 		'org.springframework.boot:spring-boot-starter-web',
 		'org.springframework.kafka:spring-kafka',
@@ -36,7 +36,6 @@ dependencies {
 		'com.google.guava:guava:24.0-jre',
 		'org.apache.commons:commons-collections4:4.1',
 
-		'org.postgresql:postgresql',
 	)
 
 	runtime('org.springframework.boot:spring-boot-devtools')
